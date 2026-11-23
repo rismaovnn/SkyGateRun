@@ -1,0 +1,20 @@
+{
+  "name": "sky-gate-run",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hypercasual HTML5 runner — swipe, pick gates, grow big, smash the boss.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "howler": "^2.2.4",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

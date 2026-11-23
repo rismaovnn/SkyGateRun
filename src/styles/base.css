@@ -1,0 +1,40 @@
+/* base.css — reset, 9:16 frame and the scaled UI stage. */
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body {
+  margin: 0; height: 100%; overflow: hidden; overscroll-behavior: none;
+  background: #1C5FA8;
+  font-family: var(--font-ui);
+  color: var(--ink);
+  -webkit-user-select: none; user-select: none;
+  -webkit-touch-callout: none;
+}
+body { display: flex; align-items: center; justify-content: center; }
+
+#frame {
+  position: relative; overflow: hidden;
+  background: var(--sky-grad);
+  touch-action: none;
+}
+#game, #fx2d { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#fx2d { pointer-events: none; z-index: 3; }
+
+/* The UI stage is laid out at 360 × var(--stage-h) dp and scaled by Engine.onResize(). */
+#ui {
+  position: absolute; left: 0; top: 0; transform-origin: 0 0;
+  z-index: 2; pointer-events: none;
+}
+#ui > * { pointer-events: auto; }
+
+#fade { position: absolute; inset: 0; background: #0F172A; opacity: 0; pointer-events: none; z-index: 10; }
+
+.screen { position: absolute; inset: 0; overflow: hidden; }
+.screen.passthrough { pointer-events: none; }
+.screen.passthrough .interactive, .screen.passthrough button, .screen.passthrough a { pointer-events: auto; }
+
+button { font: inherit; color: inherit; }
+.hidden { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rays, .drift, .shake-loop { animation: none !important; }
+}

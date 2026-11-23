@@ -1,0 +1,19 @@
+/* animations.css — CSS keyframes (transform/opacity only, GPU friendly). GSAP handles one-shot tweens. */
+@keyframes shine { 0% { left: -40%; } 60%, 100% { left: 120%; } }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes drift { from { transform: translateX(0); } to { transform: translateX(30px); } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@keyframes giftShake { 0%, 80%, 100% { transform: rotate(0); } 85% { transform: rotate(-12deg); } 90% { transform: rotate(10deg); } 95% { transform: rotate(-6deg); } }
+@keyframes rays { to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes stripe { to { background-position: 28px 0, 0 0; } }
+@keyframes twinkle { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
+@keyframes swipeHand { 0%, 100% { transform: translateX(-34px); } 50% { transform: translateX(34px); } }
+@keyframes glowPulse { 0%, 100% { box-shadow: 0 0 0 3px var(--orange), 0 6px 14px rgba(255, 138, 31, .45); } 50% { box-shadow: 0 0 0 3px var(--orange), 0 6px 24px rgba(255, 138, 31, .85); } }
+@keyframes ptr { 0%, 100% { left: 6%; } 50% { left: 94%; } }
+
+.bob { animation: bob 2.2s ease-in-out infinite; }
+.drift { animation: drift 12s ease-in-out infinite alternate; }
+.pulse { animation: pulse 1.4s ease-in-out infinite; }
+.shake-loop { animation: giftShake 3s ease-in-out infinite; }
+.rays { animation: rays 18s linear infinite; }
+.twinkle { animation: twinkle 2.4s ease-in-out infinite; }

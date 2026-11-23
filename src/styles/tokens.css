@@ -1,0 +1,29 @@
+/* tokens.css — design tokens from the Sky Gate Run design system (values in dp of the 360×640 stage). */
+:root {
+  --sky: #38B6FF;    --sky-l: #8FD8FF;    --sky-d: #1E88E5;
+  --cyan: #22D3EE;   --cyan-l: #67E8F9;   --cyan-d: #0891B2;
+  --green: #22C55E;  --green-l: #7CF29C;  --green-d: #15803D;
+  --orange: #FF8A1F; --orange-l: #FFB35C; --orange-d: #C2410C;
+  --yellow: #FFD23F; --yellow-l: #FFE66B; --yellow-d: #B7791F;
+  --blue: #2563EB;   --blue-l: #5FB2FF;   --blue-d: #1E40AF;
+  --purple: #8B5CF6; --purple-l: #B794FF; --purple-d: #5B21B6;
+  --pink: #EC4899;   --pink-l: #FF9CCB;   --pink-d: #BE185D;
+  --red: #F43F5E;    --red-l: #FF8A9A;    --red-d: #BE123C;
+  --ink: #0F172A; --ink-2: #334155; --ink-3: #475569;
+  --mist: #E8F2FC; --white: #FFFFFF;
+  --sky-grad: linear-gradient(180deg, #2FA8FF 0%, #7FD3FF 48%, #D6F3FF 100%);
+
+  --font-display: 'Luckiest Guy', 'Titan One', 'Arial Black', Impact, sans-serif;
+  --font-ui: 'Fredoka', 'Baloo 2', 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px;
+  --r-chip: 8px; --r-sm: 12px; --r-icon: 16px; --r-btn: 20px; --r-card: 24px; --r-modal: 32px; --r-pill: 999px;
+  --e1: 0 2px 8px rgba(20, 50, 110, .12);
+  --e2: 0 8px 24px rgba(20, 50, 110, .18);
+  --e3: 0 14px 40px rgba(20, 50, 110, .28);
+  --touch-min: 48px;
+
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-back: cubic-bezier(.34, 1.56, .64, 1);
+  --stage-h: 640px;
+}
